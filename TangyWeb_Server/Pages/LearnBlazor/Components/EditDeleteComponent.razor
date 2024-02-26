@@ -1,0 +1,24 @@
+﻿@if (IsActive)
+{
+    <div>
+        <button class="btn btn-primary" @onclick="EditClick">Edit</button>
+        <button class="btn btn-danger" @onclick="DeleteClick">Delete</button>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public bool IsActive { get; set; }
+
+    private void EditClick()
+    {
+        // Add code to edit the product
+
+    }
+
+    private void DeleteClick()
+    {
+        // Add code to delete the product
+    }
+}
+
